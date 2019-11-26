@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <div class="container">
+      <h1>{{ title }}</h1>
+      <p>Stuff I still haven't done:</p>
+    </div>
+  `,
+  styles: []
 })
 export class AppComponent {
-  title = 'egghead-ngrx';
+  title = 'Todos';
 }
